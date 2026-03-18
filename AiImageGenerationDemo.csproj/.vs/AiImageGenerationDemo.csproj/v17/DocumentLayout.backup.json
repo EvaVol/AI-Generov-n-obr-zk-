@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7F2097-E9A4-4982-ADBF-35162B2F7C24}|AiImageGenerationDemo.csproj|c:\\users\\volem\\onedrive - mensa gymn\u00E1zium, o.p.s\\mensa\\semprgx\\ai generov\u00E1n\u00ED obr\u00E1zk\u016F\\aiimagegenerationdemo.csproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7F2097-E9A4-4982-ADBF-35162B2F7C24}|AiImageGenerationDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\volem\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd51553b-f846-4f19-b7a6-6431e9de9b64\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7F2097-E9A4-4982-ADBF-35162B2F7C24}|AiImageGenerationDemo.csproj|c:\\users\\volem\\onedrive - mensa gymn\u00E1zium, o.p.s\\mensa\\semprgx\\ai generov\u00E1n\u00ED obr\u00E1zk\u016F\\aiimagegenerationdemo.csproj\\aiimagegenerationdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7C7F2097-E9A4-4982-ADBF-35162B2F7C24}|AiImageGenerationDemo.csproj|solutionrelative:aiimagegenerationdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\volem\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd51553b-f846-4f19-b7a6-6431e9de9b64\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd51553b-f846-4f19-b7a6-6431e9de9b64\\secrets.json",
+              "ToolTip": "C:\\Users\\volem\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd51553b-f846-4f19-b7a6-6431e9de9b64\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd51553b-f846-4f19-b7a6-6431e9de9b64\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-11T16:03:44.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AiImageGenerationDemo",
+              "DocumentMoniker": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
+              "RelativeDocumentMoniker": "AiImageGenerationDemo.csproj",
+              "ToolTip": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
+              "RelativeToolTip": "AiImageGenerationDemo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-11T15:54:04.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAawEsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T15:47:30.207Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI Generování obrázků\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj": {}
+    "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI - obrazek na vstupu i na vystupu\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI Generování obrázků\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj": {
+    "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI - obrazek na vstupu i na vystupu\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI Generování obrázků\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
+        "projectUniqueName": "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI - obrazek na vstupu i na vystupu\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
         "projectName": "AiImageGenerationDemo",
-        "projectPath": "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI Generování obrázků\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
+        "projectPath": "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI - obrazek na vstupu i na vystupu\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
         "packagesPath": "C:\\Users\\volem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI Generování obrázků\\AiImageGenerationDemo.csproj\\obj\\",
+        "outputPath": "C:\\Users\\volem\\OneDrive - Mensa gymnázium, o.p.s\\MENSA\\SemPrgX\\AI - obrazek na vstupu i na vystupu\\AiImageGenerationDemo.csproj\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "Azure.AI.OpenAI": {
               "target": "Package",
-              "version": "[2.1.0, )"
+              "version": "[2.9.0-beta.1, )"
             },
             "Microsoft.Extensions.AI.OpenAI": {
               "target": "Package",

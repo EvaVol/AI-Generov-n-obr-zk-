@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AiImageGenerationDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1087d3b87e0f14e908abb1095d27c7798916a6f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AiImageGenerationDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AiImageGenerationDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

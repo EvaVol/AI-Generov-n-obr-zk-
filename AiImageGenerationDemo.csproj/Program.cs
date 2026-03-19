@@ -22,70 +22,110 @@ var imageClient = azureClient.GetImageClient(deploymentName);
 IImageGenerator generator = imageClient.AsIImageGenerator();
 #pragma warning restore MEAI001
 
-Console.WriteLine("=== AI Image Generation Demo ===");
+Console.WriteLine("=== AI Age Progression Demo ===");
 Console.WriteLine();
-Console.Write("Zadej textový prompt: ");
-string? prompt = Console.ReadLine();
 
-if (string.IsNullOrWhiteSpace(prompt))
+Console.Write("Zadej cestu ke vstupní fotografii: ");
+string? inputPath = Console.ReadLine();
+
+if (string.IsNullOrWhiteSpace(inputPath) || !File.Exists(inputPath))
 {
-    Console.WriteLine("Prompt nesmí být prázdný.");
+    Console.WriteLine("Soubor neexistuje nebo cesta není platná.");
     return;
 }
 
 Console.WriteLine();
-Console.WriteLine("Generuji obrázek...");
+Console.WriteLine("Upravuji fotografii...");
 
 try
 {
+    byte[] inputImageBytes = await File.ReadAllBytesAsync(inputPath);
+    string inputFileName = Path.GetFileName(inputPath);
+
+    /*string prompt = """
+Create a photorealistic age-progressed portrait of the same person at approximately 80 years old.
+Preserve the person's identity, face shape, skin tone, eye color, and overall likeness.
+Keep the same framing, pose, and composition if possible.
+Add only natural age-related changes such as realistic wrinkles, softer skin, slight sagging, and greying or thinning hair where plausible.
+Do not change gender, ethnicity, facial expression, clothing style, or background unnecessarily.
+Do not create a cartoon, painting, or stylized image.
+The result must look like a believable real photograph.
+""";*/
+
+    string prompt = """
+Create a photorealistic gedner change portrait of the same person.
+Preserve the person's identity, skin tone, eye color, and overall likeness.
+Keep the same framing, pose, and composition if possible.
+Add only gender changes.
+Do not create a cartoon, painting, or stylized image.
+The result must look like a believable real photograph.
+""";
+
     var options = new ImageGenerationOptions
     {
-        MediaType = "image/png"
+        MediaType = "image/png",
+        Count = 3
     };
 
-    ImageGenerationResponse response = await generator.GenerateImagesAsync(prompt, options);
+    ImageGenerationResponse response = await generator.EditImageAsync(
+        inputImageBytes,
+        inputFileName,
+        prompt,
+        options);
 
-    DataContent? imageData = response.Contents.OfType<DataContent>().FirstOrDefault();
+    var images = response.Contents.OfType<DataContent>().ToList();
 
-    if (imageData is null)
+    if (images.Count == 0)
     {
-        Console.WriteLine("Služba nevrátila žádná binární data obrázku.");
+        Console.WriteLine("Služba nevrátila žádná data obrázku.");
         return;
     }
 
     string picturesFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
-    string outputFolder = Path.Combine(picturesFolder, "AiGeneratedImages");
+    string outputFolder = Path.Combine(picturesFolder, "AiAgedImages");
     Directory.CreateDirectory(outputFolder);
 
-    string safeFileName = $"image-{DateTime.Now:yyyyMMdd-HHmmss}.png";
-    string outputPath = Path.Combine(outputFolder, safeFileName);
+    List<string> savedFiles = new();
 
-    await File.WriteAllBytesAsync(outputPath, imageData.Data.ToArray());
+    for (int i = 0; i < images.Count; i++)
+    {
+        string outputPath = Path.Combine(
+            outputFolder,
+            $"aged-80-{DateTime.Now:yyyyMMdd-HHmmss}-{i + 1}.png");
 
-    Console.WriteLine($"Hotovo. Obrázek byl uložen sem:");
-    Console.WriteLine(outputPath);
+        await File.WriteAllBytesAsync(outputPath, images[i].Data.ToArray());
+        savedFiles.Add(outputPath);
+    }
 
+    Console.WriteLine("Hotovo. Obrázky byly uloženy sem:");
+    foreach (string file in savedFiles)
+    {
+        Console.WriteLine(file);
+    }
+
+    // Otevře první variantu
     Process.Start(new ProcessStartInfo
     {
-        FileName = outputPath,
+        FileName = savedFiles[0],
         UseShellExecute = true
     });
 }
 catch (Exception ex)
 {
-    Console.WriteLine("Došlo k chybě při generování obrázku:");
+    Console.WriteLine("Došlo k chybě při úpravě obrázku:");
     Console.WriteLine(ex.Message);
 }
 
 string GetRequiredSetting(string key)
 {
     string? value = config[key];
-
     if (string.IsNullOrWhiteSpace(value))
     {
-        throw new InvalidOperationException(
-            $"Chybí nastavení '{key}'. Přidej ho přes dotnet user-secrets.");
+        throw new InvalidOperationException($"Chybí nastavení: {key}");
     }
 
     return value;
-} 
+}
+
+
+

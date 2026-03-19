@@ -33,21 +33,19 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\dd51553b-f846-4f19-b7a6-6431e9de9b64\\secrets.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T16:03:44.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T16:03:44.624Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AiImageGenerationDemo",
+              "Title": "AiImageGenerationDemo.csproj",
               "DocumentMoniker": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
               "RelativeDocumentMoniker": "AiImageGenerationDemo.csproj",
               "ToolTip": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\AiImageGenerationDemo.csproj",
               "RelativeToolTip": "AiImageGenerationDemo.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-11T15:54:04.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T15:54:04.304Z"
             },
             {
               "$type": "Document",
@@ -57,7 +55,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\volem\\OneDrive - Mensa gymn\u00E1zium, o.p.s\\MENSA\\SemPrgX\\AI Generov\u00E1n\u00ED obr\u00E1zk\u016F\\AiImageGenerationDemo.csproj\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAawEsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T15:47:30.207Z",
               "EditorCaption": ""
